@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="number">
-        <div class="winner">
-            <h2>numéros gagnants</h2>
-            <input type="text" id="win-numbers" name="numéros gagnans">
-        </div>
-        <div class="my-numbers">
-            <h2>mes numéros</h2>
-            <input type="text" id="my-numbers" name="mes numéros">
-        </div>
+   <fieldset class="loterie" id="global">
+       <fieldset class="loterie" id="my-side">
+           <h2>mes numeros</h2>
+           <input type="text" id="my-numbers">
+           <button type="button">enregistrer</button>
+
+       </fieldset>
+       <fieldset class="loterie" id="win-side">
+        <h2> numeros tirés</h2>
+        <input type="text" id="winner-numbers">
+        <button type="button">enregistrer</button>
+
+    </fieldset>
+    
     </div>
-    <div class="winner-container">
-        <h1></h1>
-        <div class="button-container">
-            <button type="button" id="win-register">enregister e numéro gagnant</button>
-            <button type="button" id="my-register">enregister notre numéro</button>
-            <button type="button" id="verify">vérifier</button>
-    </div>
+
+   </fieldset>
+   <div class="verify-container" id="btn-verif">
+    <button>vérifier</button>
+    <div class="result-container">
+        <p id="result"></p>
     </div>
   <script src="script.js"></script>  
 </body>
