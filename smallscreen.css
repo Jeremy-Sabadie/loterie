@@ -1,0 +1,102 @@
+:root{
+    --background-blue:black;
+        --color-puple:#e90f8e;
+        
+    }
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        margin: 100%;
+        display: inline;
+        text-align: center;
+        color: var(--color-puple);
+        
+    
+    }
+    #global{
+        width: 100vw;
+        height: 70vh;
+        border-radius: 1em;
+        background-color: var(--background-blue);
+        border: solid 0,8em rebeccapurple;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #win-side{
+        width: 30%;
+        height: 40%;
+        
+        border: solid 0,8em red;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20%;
+    
+    }
+    #my-side{
+        width: 30%;
+        height: 40%;
+       
+        
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20%;
+        
+    
+    }
+    input{
+        width: 60%;
+    }
+    
+    
+    fieldset{
+        border: solid 2px rgb(221, 9, 186);
+    }
+    .verify-container{
+        width: 30vh;
+        
+        
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+        
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -16em;
+    }
+    button{
+        width: 6em;
+        height: 1,5em;
+    }
+    .result-container{
+        height: 5em;
+        width: 100%;
+        text-align: center;
+        margin-top: 0em;
+        
+        display: block;
+        
+        
+    }
+    p{
+        color: var(--color-puple);
+        font-size: 5em;
+    }
+    #reponse{
+        height: 3em;
+    }
