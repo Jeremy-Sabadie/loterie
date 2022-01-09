@@ -1,64 +1,64 @@
+//début de la récupération des élément de notre côté.
+var MyNumberInput = document.querySelector('#my-numbers');
 
-//ici on récupère les diférents éléments du DOM.
-var WinnerNumbers = document.getElementById('win-numbers');//input pour entrer les numéros gagnants.
-var MyNumbers = document.getElementById('my-numbers');//input pour entrer mes numéros.
-const VerifyButon = document.getElementById('verify');//bouton de vérification.
-const WinRegisterButon = document.getElementById('win-register');//bouton pour enregistrer le numéro gagnant entré.
-const MyRegisterButon = document.getElementById('my-register');//bouton pour enregistrer le notre numéro entré.
-const Message = document.querySelector('#result');
-var MyNumbersArray = [];//Ce tableau vide servira à stocker nos numéros.
-var WinnerNumbersArray = [];//ce tableau est initialisé vide pour y stocker les numéros gagnantsrentés.
-//la fonction stock récupèrera les valeurs entrées dans les inputs et les tockera dans des tableaux.
-
-function StockWinner(){
-    
-   
-
-
-    
-    WinnerNumbersArray.push(WinnerNumbers.value);//On stocke la valeur de l'input dans le tableau.
-    
-    console.log('les numéros gagnants sont : '+WinnerNumbersArray);
-
+const MyRegisterButton =document.querySelector('#my-register');
+var MyListNumber = document.querySelector('#my-list');
+//début de la récupération des élément du côté des nombres gagnants.
+var WinNumberInput = document.querySelector('#win-numbers');
+//récupération des éléléments de vérifiation
+const WinRegisterButton =document.querySelector('#win-register');
+var WinListNumber = document.querySelector('#win-list');
+const VerifyButton = document.querySelector('#reponse');
+const TextResult = document.querySelector('#result');
+const Reset = document.querySelector('#reset');
+//fin de la récupération des différents éléments.result-container
+var MyNumbersArray = [];
+var WinNumbersArray = [];
+function MyStock(){
+    if(parseInt(MyNumberInput.value)){
+    MyNumbersArray.push(MyNumberInput.value);}
+    MyNumbersArray= MyNumbersArray.join('|');
+    MyListNumber.innerHTML= "vos numéros sont : "+MyNumbersArray.toString;
+    MyNumberInput.value="";
 }
-function MyStockNumber(){
-    
-    MyNumbersArray.push(MyNumbers.value); //On stocke la valeur de l'input dans le tableau.
-    
-    console.log('mes numéros  sont :'+MyNumbersArray);
-    
-
+function WinStock(){
+    if(parseInt(WinNumberInput.value)){
+    WinNumbersArray.push(WinNumberInput.value);}
+    WinNumbersArray=WinNumbersArray.join('|');
+    WinListNumber.innerHTML="les numéros tirés sont : "+WinNumbersArray.toString;
 }
-  var CompareArrays = WinnerNumbersArray===MyNumbersArray;
-    
-    function verify(){
-        WinnerNumbersArray.forEach((element)=> console.log(element));}
-        if(MyNumbersArray.includes(element)){alert('win');}
-        
-        
-            
+function TheReponse(){
+    if(MyNumbersArray.length>=1&&WinNumbersArray>=1){
+        TheWinnerNumber=[];
+        Win=false
+        MyNumbersArray.forEach((element) => {
+            if (WinnerNumbersArray.includes(Element)){
+              win = true;
+             TheWinnerNumber.push(Element);
             }
+        }  
+        if(win=true){
+            TextResult.innerHTML= "vous avez gagné avec le numéro: "+TheWinnerNumber;
+            TextResult.color="green";}
+        else{
+            TextResult.innerHTML="Vous n'avez pas gagné!"
+            TextResult.getElementsByClassName.red;
         
+        }
+        }
+    }
+}
+function Reset(){
+    WinNumbersArray=[];
+    MyNumbersArray= [];
+    TextResult.innerHTML="";
+}
 
-        
-
-        
 
 
 
 
-    /*console.log(GlobalTable);
-    GlobalTable.forEach(element =>console.log(element));
-    if(ily a concordance){
-        message.innerHHTML('numéro gagnant')*/
-
-        
-
-   
-WinRegisterButon.onclick=StockWinner
-MyRegisterButon.onclick=MyStockNumber
-VerifyButon.onclick=verify
-
- 
-    
-
+MyRegisterButton.onclick=MyStock
+WinRegisterButton.onclick=WinStock
+VerifyButton.onclick= TheReponse
+Reset.onclick= Reset

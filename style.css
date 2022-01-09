@@ -32,28 +32,60 @@ body{
 #win-side{
     width: 30%;
     height: 70%;
-    
-    border: solid 0,8em red;
-    border-radius: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-#my-side{
-    width: 30%;
-    height: 70%;
    
     
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 4em;
+
+}
+#my-side{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4em;
     
 
 }
+#my-list{
+    width: 100%;
+    height: 8em;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.win-list-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-list-container{
+    width: 100%;
+    height: 8em;
+    display: flex;
+    flex-wrap: wrap;
+}
+#win-list{
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
 input{
     width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -61,11 +93,15 @@ fieldset{
     border: solid 2px rgb(221, 9, 186);
 }
 .verify-container{
+    margin-left: auto;
+    margin-right: auto;
+
     width: 70vh;
     
     text-align: center;
-    display: block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
     justify-content: center;
     
     margin-left: auto;
@@ -73,9 +109,22 @@ fieldset{
     margin-top: -8em;
 }
 button{
+    margin: 3px;
     width: 6em;
     height: 1,5em;
+    
+    border-radius: 0,5em;
+    
+    cursor: grab;
+    margin-left: auto;
+    margin-right: auto;
+    
+
 }
+.button-action:hover{
+    box-shadow: inset 6em 2em 2em 2em var(--color-puple);
+}
+
 .result-container{
     height: 5em;
     width: 100%;
@@ -88,12 +137,13 @@ button{
 }
 p{
     
-    font-size: 5em;
+    font-size: 3em;
 }
 #reponse{
     height: 3em;
 }
-ebut/*  début des média queries*/
+/*  début des média queries*/
+
 
  
 

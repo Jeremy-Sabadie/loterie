@@ -44,6 +44,8 @@
     #my-side{
         width: 30%;
         height: 40%;
+        display: flex;
+        flex-wrap: wrap;
        
         
         border-radius: 1em;
@@ -69,7 +71,8 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        display: block;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         
@@ -80,8 +83,20 @@
         margin-top: -16em;
     }
     button{
+        
         width: 6em;
+        
         height: 1,5em;
+        
+        border-radius: 0,5em;
+        margin: 5px;
+        cursor: grab;
+        
+
+    }
+    .button-action:hover{
+        transition: ease-in-out 3s;
+        box-shadow: inset 6em 2em 2em 2em var(--color-puple);
     }
     .result-container{
         height: 5em;
@@ -95,8 +110,31 @@
     }
     p{
         color: var(--color-puple);
-        font-size: 5em;
+        font-size: 2em;
     }
     #reponse{
         height: 3em;
     }
+    #win-list{
+        width: 100%;
+        height: 4em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #my-list{
+        width: 100%;
+        height: 4em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.win-list-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-list-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

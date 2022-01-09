@@ -1,13 +1,12 @@
 #principe:
-le principe serai de comparer les numéro des tikets de la personne avec les numéros gagnantsdes précédants tirages.
+le principe est de comparer les numéro de nos tikets avec les numéros gagnants des différents tirages.
 # pseudo code loterie:
-deux inputs
+deux inputs chacunassociés à un bouton d'enregistrementqui stockera les numéros entés dans deux tableaux distincts
 Un pour récupérer tous les numéros gagants.
 Un autre pour récupérer nos numéros.
-Deux boutons.
-Un pour enregistrer le numéro entré soit dans le tableau des numéros gagnants.
-Un autre pour vérifier si un des numéro se trouve dans les deux tableaux en même temps.
-Il y aura donc trois fonction.
+Chaque élément sera lié à une fonction.
+
+Il y aura donc trois fonctions.
 Une pour enregistrer les numéros gagnants.
 Une pour enregistrer nos numéros.
 Une autre pour vérifier s'il y a une concordance et l'afficher dans la page.

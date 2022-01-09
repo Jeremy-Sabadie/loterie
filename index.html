@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>loterie</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 640px)" href="smallscreen.css" type="text/css" />
 </head>
@@ -14,23 +14,31 @@
         <fieldset class="loterie" id="my-side">
             <h2>mes numeros</h2>
             <input type="text" id="my-numbers"/>
-            <button type="button">enregistrer</button>
+            <button type="button" id="my-register" class="button-action">enregistrer</button>
+            <div class="my-list-container">
+                <p id="my-list"></p>
+            </div>
 
         </fieldset>
         <fieldset class="loterie" id="win-side">
             <h2> numeros tirés</h2>
             <input type="text" id="winner-numbers"/>
-            <button type="button">enregistrer</button>
+            <button type="button" id="win-register" class="button-action">enregistrer</button>
+            <div class="win-list-container">
+                <p id="win-list"></p>
+            </div>
 
         </fieldset>
+    </fieldset>
 
         </div>
 
     </fieldset>
     <div class="verify-container" id="btn-verif">
-        <button id="reponse">vérifier</button>
+        <button id="reponse" class="button-action">vérifier</button>
+        <button id="reset" class="button-action">reset</button>
         <div class="result-container">
-            <p id="result">fghjk</p>
+            <p id="result"></p>
         </div>
     </div>
 
