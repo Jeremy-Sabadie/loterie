@@ -1,6 +1,6 @@
 #principe:
 le principe est de comparer les numéro de nos tikets avec les numéros gagnants des différents tirages.
-# pseudo code loterie:
+# pseudo code de l'exerciceloterie:
 deux inputs chacunassociés à un bouton d'enregistrementqui stockera les numéros entés dans deux tableaux distincts
 Un pour récupérer tous les numéros gagants.
 Un autre pour récupérer nos numéros.
