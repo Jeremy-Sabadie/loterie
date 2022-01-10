@@ -29,13 +29,28 @@ function WinStock(){
     WinNumbersArray=WinNumbersArray.join('|');
     WinListNumber.innerHTML="les numéros tirés sont : "+WinNumbersArray;
 }
-function TheReponse(){
-    
-}
+
     
             
         
-        
+function TheReponse() {
+    if (MyNumbersArray.length >= 1 && WinNumbersArray >= 1) {
+      TheWinnerNumber = [];
+      Win = false;
+      MyNumbersArray.forEach((element) => {
+        if (WinnerNumbersArray.includes(Element)) {
+          win = true;
+          TheWinnerNumber.push(Element);
+        }
+      });
+      if ((win = true)) {
+        TextResult.innerHTML =
+          "vous avez gagné avec le numéro: " + TheWinnerNumber;
+        TextResult.color = "green";
+      } else {
+        TextResult.innerHTML = "Vous n'avez pas gagné!";
+        TextResult.getElementsByClassName.red;
+      }     
             
         
         
