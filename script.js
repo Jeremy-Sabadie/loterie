@@ -10,7 +10,7 @@ const WinRegisterButton =document.querySelector('#win-register');
 var WinListNumber = document.querySelector('#win-list');
 const VerifyButton = document.querySelector('#reponse');
 const TextResult = document.querySelector('#result');
-const Reset = document.querySelector('#reset');
+const BtnReset = document.querySelector('#reset');
 TheWinnerNumber=[];
 //fin de la récupération des différents éléments.result-container
 var MyNumbersArray = [];
@@ -50,7 +50,9 @@ function TheReponse() {
       } else {
         TextResult.innerHTML = "Vous n'avez pas gagné!";
         TextResult.getElementsByClassName.red;
-      }     
+      } 
+    }
+  }    
             
         
         
@@ -77,4 +79,4 @@ function Reset(){
 MyRegisterButton.onclick=MyStock;
 WinRegisterButton.onclick=WinStock;
 VerifyButton.onclick= TheReponse;
-Reset.onclick= Reset;
+BtnReset.onclick= Reset;
