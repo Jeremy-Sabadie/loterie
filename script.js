@@ -15,19 +15,47 @@ TheWinnerNumber=[];
 //fin de la récupération des différents éléments.result-container
 var MyNumbersArray = [];
 var WinNumbersArray = [];
+
+
+function TheReponse() {
+  if (MyNumbersArray.length >= 1 && WinNumbersArray >= 1) {
+    TheWinnerNumber = [];
+    Win = false;
+    MyNumbersArray.forEach((element) => {
+      if (WinnerNumbersArray.includes(Element)) {
+        win = true;
+        TheWinnerNumber.push(Element);
+      }
+    });
+    if ((win = true)) {
+      TextResult.innerHTML =
+        "vous avez gagné avec le numéro: " + TheWinnerNumber;
+      TextResult.color = "green";
+    } else {
+      TextResult.innerHTML = "Vous n'avez pas gagné!";
+      TextResult.getElementsByClassName.red;
+    }
+  }
+}
+
+
+
+
 function MyStock(){
     if(parseInt(MyNumberInput.value)){
-    MyNumbersArray.push(MyNumberInput.value);}
-    MyNumbersArray= MyNumbersArray.join('|');
+      MyNumbersArray.join('|');
+    MyNumbersArray.push((parseInt(MyNumberInput.value)));}
+    
     MyListNumber.innerHTML= "vos numéros sont : "+MyNumbersArray;
     MyNumberInput.value="";
     
 }
 function WinStock(){
     if(parseInt(WinNumberInput.value)){
-    WinNumbersArray.push(WinNumberInput.value);}
-    WinNumbersArray=WinNumbersArray.join('|');
+      WinNumbersArray.push((parseInt(WinNumberInput.value)));}
+    
     WinListNumber.innerHTML="les numéros tirés sont : "+WinNumbersArray;
+    WinNumberInput.value="";
 }
 
     
@@ -35,17 +63,19 @@ function WinStock(){
         
 function TheReponse() {
     if (MyNumbersArray.length >= 1 && WinNumbersArray >= 1) {
-      TheWinnerNumber = [];
+       TheWinnerNumber = [];
       Win = false;
       MyNumbersArray.forEach((element) => {
-        if (WinnerNumbersArray.includes(Element)) {
+        if (WinNumbersArray.includes(Element)) {
+          console.log(Element);
           win = true;
-          TheWinnerNumber.push(Element);
+          //TheWinnerNumber.push(Element);
         }
       });
       if ((win = true)) {
+        
         TextResult.innerHTML =
-          "vous avez gagné avec le numéro: " + TheWinnerNumber;
+          "vous avez gagné avec le numéro: " + "";
         TextResult.color = "green";
       } else {
         TextResult.innerHTML = "Vous n'avez pas gagné!";
