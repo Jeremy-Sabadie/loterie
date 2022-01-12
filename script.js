@@ -17,26 +17,7 @@ var MyNumbersArray = [];
 var WinNumbersArray = [];
 
 
-function TheReponse() {
-  if (MyNumbersArray.length >= 1 && WinNumbersArray >= 1) {
-    TheWinnerNumber = [];
-    Win = false;
-    MyNumbersArray.forEach((element) => {
-      if (WinnerNumbersArray.includes(Element)) {
-        win = true;
-        TheWinnerNumber.push(Element);
-      }
-    });
-    if ((win = true)) {
-      TextResult.innerHTML =
-        "vous avez gagné avec le numéro: " + TheWinnerNumber;
-      TextResult.color = "green";
-    } else {
-      TextResult.innerHTML = "Vous n'avez pas gagné!";
-      TextResult.getElementsByClassName.red;
-    }
-  }
-}
+
 
 
 
@@ -62,27 +43,39 @@ function WinStock(){
             
         
 function TheReponse() {
+  console.log('TestLog');
     if (MyNumbersArray.length >= 1 && WinNumbersArray >= 1) {
        TheWinnerNumber = [];
       Win = false;
       MyNumbersArray.forEach((element) => {
-        if (WinNumbersArray.includes(Element)) {
-          console.log(Element);
+        if (WinNumbersArray.includes(element)) {
+          console.log('yes');
+          console.log(element);
+          TextResult.innerHTML =
+          "vous avez gagné avec le numéro: " + element;
+          TextResult.color="green";
           win = true;
-          //TheWinnerNumber.push(Element);
+          TheWinnerNumber.push(element);
         }
-      });
-      if ((win = true)) {
-        
-        TextResult.innerHTML =
-          "vous avez gagné avec le numéro: " + "";
-        TextResult.color = "green";
-      } else {
+        else{console.log('loose');
         TextResult.innerHTML = "Vous n'avez pas gagné!";
-        TextResult.getElementsByClassName.red;
-      } 
+        TextResult.color="red";}
+      });
+      
+        
+        //TheWinnerNumber.push(element);//problème d'accès à l'élément element.
+      
+        
+
+
+
+      }
+        
+      
+        
     }
-  }    
+    
+     
             
         
         
@@ -108,5 +101,5 @@ function Reset(){
 
 MyRegisterButton.onclick=MyStock;
 WinRegisterButton.onclick=WinStock;
-VerifyButton.onclick= TheReponse;
+VerifyButton.onclick=  TheReponse;
 BtnReset.onclick= Reset;
