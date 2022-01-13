@@ -53,13 +53,13 @@ function TheReponse() {
           console.log(element);
           TextResult.innerHTML =
           "vous avez gagné avec le numéro: " + element;
-          TextResult.color="green";
+          TextResult.style.color="green";
           win = true;
           TheWinnerNumber.push(element);
         }
         else{console.log('loose');
-        TextResult.innerHTML = "Vous n'avez pas gagné!";
-        TextResult.color="red";}
+        TextResult.innerHTML = ":(Vous n'avez pas gagné!";
+        TextResult.style.color="red";}
       });
       
         
