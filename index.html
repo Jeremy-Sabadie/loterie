@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>loterie</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 640px)" href="smallscreen.css" type="text/css" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 640px)"
+      href="smallscreen.css"
+      type="text/css"
+    />
+  </head>
 
-<body>
+  <body>
     <fieldset class="loterie" id="global">
-        <fieldset class="loterie" id="my-side">
-            <h2>mes numeros</h2>
-            <input type="text" id="my-numbers"/>
-            <button type="button" id="my-register" class="button-action">enregistrer</button>
-            <p id="my-list">liste de mes numéros</p>
-        </fieldset>
-        <fieldset class="loterie" id="win-side">
-            <h2> numeros tirés</h2>
-            <input type="text" id="winner-numbers"/>
-            <button type="button" id="win-register" class="button-action">enregistrer</button>
-            <p id="win-list">liste des numéros tirés</p>
-            
-
-        </fieldset>
+      <fieldset class="loterie" id="my-side">
+        <h2>mes numeros</h2>
+        <input type="text" id="my-numbers" />
+        <button type="button" id="my-register" class="button-action">
+          enregistrer
+        </button>
+        <p id="my-list">liste de mes numéros</p>
+    </fieldset>
+      <fieldset class="loterie" id="win-side">
+        <h2>numeros tirés</h2>
+        <input type="text" id="winner-numbers" />
+        <button type="button" id="win-register" class="button-action">
+          enregistrer
+        </button>
+        <p id="win-list">liste des numéros tirés</p>
+      </fieldset>
     </fieldset>
 
-        
-
-    
     <div class="verify-container" id="btn-verif">
-        <button id="reponse" class="button-action">vérifier</button>
-        <button id="reset" class="button-action">reset</button>
-        <div class="result-container">
-            <p id="result">verdict du tirage</p>
-        </div>
+      <button id="reponse" class="button-action">vérifier</button>
+      <button id="reset" class="button-action">reset</button>
+      <div class="result-container">
+        <p id="result">verdict du tirage</p>
+      </div>
     </div>
 
-    
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
